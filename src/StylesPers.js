@@ -12,7 +12,7 @@ const styles = {
     view: {
       flex: 1,
       padding: 0,
-      backgroundColor: "#b7fcea",
+      backgroundColor: "#dbdbdb",
     },
     adwertText: {
       color: "#000",
@@ -21,94 +21,55 @@ const styles = {
   },
   styles_6: {
     btnCont: {
-      padding: 10,
+      marginTop: "9%",
       display: "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
+      flexDirection: "column",
+      height: "90%",
       justifyContent: "space-between",
       alignItems: "center",
     },
-    button: (c_razm) => ({
+    button: {
+      backgroundColor: "#B3AEA2",
+      width: "96%",
+      height: "15%",
       justifyContent: "center",
       alignItems: "center",
-      width: c_razm,
-      height: c_razm,
-      borderRadius: c_razm / 2,
-      marginTop: 30,
-    }),
+      borderColor: "#8F7669",
+      borderWidth: 4.5,
+      borderRadius: 10,
+    },
     buttonText: (fz) => ({
       fontSize: fz,
+      justifyContent: "center",
+      alignItems: "center",
       textAlign: "center",
     }),
-    c1: {
-      backgroundColor: "#b7f4fa",
-    },
-    c2: {
-      backgroundColor: "#5686ad",
-    },
-    c3: {
-      backgroundColor: "#47acef",
-    },
-    c4: {
-      backgroundColor: "#158a8d",
-    },
-    c5: {
-      backgroundColor: "#d7a356",
-    },
-    c6: {
-      backgroundColor: "#d656d3",
-    },
   },
   styles_7: {
     btnCont: {
-      padding: 17.5,
+      marginTop: "5%",
       display: "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
+      flexDirection: "column",
+      height: "95%",
       justifyContent: "space-between",
       alignItems: "center",
     },
-    button: (c_razm) => ({
+    button: {
+      backgroundColor: "#B3AEA2",
+      width: "95%",
+      height: "13%",
       justifyContent: "center",
       alignItems: "center",
-      width: c_razm,
-      height: c_razm,
-      borderRadius: c_razm / 2,
-      marginTop: 11,
-    }),
+      borderColor: "#8F7669",
+      borderWidth: 4.5,
+      borderRadius: 10,
+    },
     buttonText: (fz) => ({
       fontSize: fz,
-      textAlign: "center",
-    }),
-    c1: {
-      backgroundColor: "#b7f4fa",
-    },
-    c2: {
-      backgroundColor: "#5686ad",
-    },
-    c3: {
-      backgroundColor: "#47acef",
-    },
-    c4: {
-      backgroundColor: "#158a8d",
-    },
-    c5: {
-      backgroundColor: "#d7a356",
-    },
-    c6: {
-      backgroundColor: "#d656d3",
-    },
-    c7: {
-      backgroundColor: "#afd656",
-      marginTop: -10,
-    },
-    centerRow: {
-      width: "100%",
-      minWidth: 200,
-      flex: 1,
       justifyContent: "center",
       alignItems: "center",
-    },
+      textAlign: "center",
+    }),
   },
 };
 

@@ -12,7 +12,7 @@ const styles = {
     view: {
       flex: 1,
       padding: 0,
-      backgroundColor: "#b7fcea",
+      backgroundColor: "#dbdbdb",
     },
     adwertText: {
       color: "#000",
@@ -30,26 +30,23 @@ const c_styles = {
     positon: "relative",
     padding: "2%",
     marginTop: 20,
-    width: "100%",
+    width: "95%",
     height: "auto",
-    textAlign: "center",
   },
   textTitle: {
     fontSize: 19,
     fontWeight: "bold",
-    textAlign: "center",
   },
   chapterTextDiv: {
     padding: "2%",
-    marginTop: 40,
+    marginTop: -5,
     width: "95%",
     height: "auto",
     height: "auto",
-    textAlign: "center",
+    textAlign: "left",
   },
   chapterText: {
     fontSize: 18,
-    textAlign: "center",
   },
   bold: {
     fontWeight: "bold",
@@ -72,15 +69,6 @@ const c_styles = {
     height: c_razm,
     borderRadius: c_razm / 2,
   }),
-  buttonGreen: {
-    backgroundColor: "#19f965",
-  },
-  buttonRed: {
-    backgroundColor: "#fa1931",
-  },
-  buttonBlue: {
-    backgroundColor: "#47acef",
-  },
   buttonText: (fz) => ({
     fontSize: fz,
     textAlign: "center",
@@ -95,12 +83,14 @@ const c_styles = {
     flexWrap: "wrap",
   },
   swipeBtn: {
-    backgroundColor: "#158a8d",
+    backgroundColor: "#B3AEA2",
     width: 125,
     height: 40,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 50,
+    borderColor: "#8F7669",
+    borderWidth: 3,
   },
 };
 

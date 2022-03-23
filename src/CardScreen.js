@@ -8,15 +8,32 @@ const ex = {
   height: Dimensions.get("window").height,
 };
 
+let height = 275;
+
+if (ex.height > 900) {
+  height = 400;
+}
+if (ex.height > 1200) {
+  height = 500;
+}
+
 const styleImg = {
   img: {
+    marginTop: 10,
+    width: "95%",
     marginTop: 0,
     marginBottom: 0,
     flex: 1,
-    width: "95%",
-    height: 350,
     resizeMode: "contain",
   },
+  imgDiv: (height) => ({
+    width: "100%",
+    height: height,
+    backgroundColor: "#B3AEA2",
+    justifyContent: "center",
+    alignItems: "center",
+    //flex: 1,
+  }),
 };
 
 function ChapterScreen({ chapter }) {
@@ -36,7 +53,9 @@ function CardScreen({ card }) {
   let index = card.id - 1;
   return (
     <ScrollView contentContainerStyle={{ alignItems: "center" }}>
-      <Image source={topicImages[index]} style={styleImg.img} />
+      <View style={styleImg.imgDiv(height)}>
+        <Image source={topicImages[index]} style={styleImg.img} />
+      </View>
       <View style={c_styles.chapterTitle}>
         <Text style={c_styles.textTitle}>Страна: {card.country}</Text>
       </View>

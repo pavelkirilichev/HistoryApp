@@ -6,11 +6,10 @@ function Ad() {
   return (
     <View style={styles.styles_all.adwert}>
       <AdMobBanner
-        bannerSize="banner"
-        adUnitID="ca-app-pub-8988485890107038/9592591435"
-        onDidFailToReceiveAdWithError={(e) => {
-          console.log(e);
-        }}
+        bannerSize="fullBanner"
+        adUnitID="ca-app-pub-8988485890107038~4723408137" // Test ID, Replace with your-admob-unit-id
+        servePersonalizedAds // true or false
+        onDidFailToReceiveAdWithError={(e) => console.log(e)}
       />
     </View>
   );
